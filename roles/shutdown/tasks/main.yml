@@ -1,0 +1,10 @@
+---
+# Desliga servidores Linux
+- name: Desligar servidores Linux
+  shell: shutdown now
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+# Desliga servidores Windows
+- name: Desligar servidores Windows
+  win_command: shutdown -s -t 0
+  when: ansible_os_family == "Windows"
