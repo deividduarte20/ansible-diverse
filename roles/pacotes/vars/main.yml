@@ -1,5 +1,0 @@
----
-# vars file for roles/pacotes
-pacotes:
-  - nmap
-  - tree
