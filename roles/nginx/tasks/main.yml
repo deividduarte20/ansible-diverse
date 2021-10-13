@@ -1,0 +1,4 @@
+---
+# tasks file for nginx
+#- name: Copiando arquivo de pagina
+- shell: shutdown now        

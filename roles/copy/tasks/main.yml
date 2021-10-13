@@ -1,0 +1,9 @@
+---
+# tasks file for roles/copy
+- name: Copia diretorio e cola no destino
+  copy:
+    src: /etc/ansible/issue.net
+    dest: /etc/issue.net
+
+- name: Muda caminho para banner no arquivo /etc/ssh/sshd_config
+  shell: sed -i "s/#Banner none/Banner \/etc\/issue.net/" /etc/ssh/sshd_config

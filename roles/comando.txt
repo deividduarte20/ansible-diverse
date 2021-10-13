@@ -1,0 +1,1 @@
+sed s/#Banner none/Banner /etc/issue.net/ /etc/ssh/sshd_config

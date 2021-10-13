@@ -1,0 +1,6 @@
+---
+# tasks file for roles/pacotes
+- name: Instalacao de pacotes
+  apt:
+    name: "{{ pacotes }}"
+    state: present
