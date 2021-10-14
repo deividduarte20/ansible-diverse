@@ -1,4 +1,4 @@
-# Seja bem vindo a esse repositório
+# Seja bem vindo!
 
 Automações com ansible
 
@@ -10,3 +10,5 @@ Pronto para automatizar?
 
 Para conhecer ansible do zero e acessar outros conteúdos relacionados clique no link:
 http://encurtador.com.br/nuJP7
+
+Se gostar do conteúdo segue aí tanto o canal do youtube quanto github.
