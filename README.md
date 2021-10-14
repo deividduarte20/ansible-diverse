@@ -9,4 +9,4 @@
 # Pronto para automatizar?
 
 # Para conhecer ansible do zero e acessar outros conteúdos relacionados clique no link:
-![Template]encurtador.com.br/nuJP7
+![Template].encurtador.com.br/nuJP7
