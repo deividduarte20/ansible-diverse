@@ -1,0 +1,35 @@
+---
+- name: Preparing Workstation
+  hosts: localhost
+  connection: local
+  tasks:
+
+    - name: Installing Linux Apps
+      become: true
+      apt:
+        name: '{{ item }}'
+        install_recommends: yes
+        state: present
+      loop:
+          - vim
+          - htop
+          - tree
+          - snapd
+          - gdebi          
+     
+    - name: Downloading Google Chrome
+      get_url:
+        url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        dest: /home/deivid/Downloads/tools
+        mode: '0440'
+
+    - name: Installing Google Chrome
+      command: dpkg -i google-chrome-stable_current_amd64.deb
+
+    # - name: Install Virtual Studio Code Extensions
+    #   shell: code --install-extension '{{ item }}' 
+    #   loop:
+    #     - ms-python.python
+    #     - CoenraadS.bracket-pair-colorizer-2
+    #     - abusaidm.html-snippets
+    #     - gdracula-theme.theme-dracula

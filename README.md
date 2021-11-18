@@ -1,14 +1,35 @@
-# Seja bem vindo!
+# Workstation Tools
 
-Automações com ansible
+This repository contains scripts to automate and speedup the workflow and preparation for my machine.
 
-=========
+> **_Disclaimer_** :  
+> Those scripts are ubuntu related with major version 18+, for other distributions you'll need to adapt it
+___
 
-Este repositório contém algumas playbooks 
+## Prepare Workstation
 
-Pronto para automatizar?
+> Read the `ubuntu.yml` file before applying and be sure to understand everything that will be done.
 
-Para conhecer ansible do zero e acessar outros conteúdos relacionados clique no link:
-http://encurtador.com.br/nuJP7
+1. Install Ansible
+```bash
+sudo apt update && sudo apt install ansible unzip git -y
+```
+2. Clone this repository
+```bash
+git clone https://github.com/caiodelgadonew/tools.git
+```
 
-Se gostar do conteúdo segue aí tanto o canal do youtube quanto github.
+3. Apply the configuration
+```bash
+ansible-playbook tools/ubuntu.yml --ask-become-pass
+```
+>Type your password when asked to give root permissions for some actions.
+___
+
+# License
+GPLv3
+
+# Author Information
+Created by [Caio Delgado](https://linktr.ee/caiodelgadonew)
+
+Contributions are more than welcome!
