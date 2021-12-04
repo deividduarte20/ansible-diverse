@@ -10,9 +10,9 @@ ___
 
 > Leia o arquivo antes de aplicar e tenha certeza que entendeu tudo que será feito
 
-1. Instale Ansible
+1. Instale Ansible e o Git
 ```bash
-sudo apt update && sudo apt install ansible -y
+sudo apt update && sudo apt install ansible git -y
 ```
 2. Clone o repositorio
 ```bash
