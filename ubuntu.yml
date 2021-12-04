@@ -16,35 +16,26 @@
           - tree
           - snapd
           - gdebi 
-          - vagrant
           - remmina
+          - vagrant
   
-    - name: Downloading Google Chrome
-      get_url:
-        url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        dest: /home/deivid/Downloads/tools
-        mode: '0440'
-
-    - name: Installing Google Chrome
-      command: dpkg -i google-chrome-stable_current_amd64.deb
-    
     - name: Downloading Vscode
       get_url:  
         url: https://az764295.vo.msecnd.net/stable/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/code_1.62.3-1637137107_amd64.deb
-        dest: /home/deivid/Downloads/tools
+        dest: /tmp
         mode: '0440'
      
     - name: Install Vscode
-      command: dpkg -i code_1.62.3-1637137107_amd64.deb
+      command: dpkg -i /tmp/code_1.62.3-1637137107_amd64.deb
     
     - name: Downloading Anydesk
       get_url:  
         url: https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb
-        dest: /home/deivid/Downloads/tools
+        dest: /tmp
         mode: '0440'
     
     - name: Install Anydesk
-      command: gdebi -n anydesk_6.1.1-1_amd64.deb
+      command: gdebi -n /tmp/anydesk_6.1.1-1_amd64.deb
  
     - name: Install SimpleScreenRecorder
       command: snap install simplescreenrecorder
@@ -52,10 +43,11 @@
     - name: Downloading Teamviewer
       get_url:  
         url: https://dl.teamviewer.com/download/linux/version_15x/teamviewer_15.23.9_amd64.deb
-        dest: /home/deivid/Downloads/tools
+        dest: /tmp
         mode: '0440'
     
     - name: Install Team Viewer
-      command: dpkg -i teamviewer_15.23.9_amd64.deb
+      command: dpkg -i /tmp/teamviewer_15.23.9_amd64.deb
     
-    
+    - name: Configure vimrc for root
+      command: ./info.sh/
