@@ -12,7 +12,7 @@ ___
 
 1. Instale Ansible e o Git
 ```bash
-sudo apt update && sudo apt install ansible git -y
+sudo apt install ansible git -y
 ```
 2. Clone o repositorio
 ```bash
