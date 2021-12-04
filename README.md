@@ -1,30 +1,30 @@
-# Workstation Tools
+# Ferramentas para estação de trabalho Linux
 
-This repository contains scripts to automate and speedup the workflow and preparation for my machine.
+Este repositório contém scripts para automatizar e acelerar a preparação da minha máquina
 
-> **_Disclaimer_** :  
-> Those scripts are ubuntu related with major version 18+, for other distributions you'll need to adapt it
+
+Os scripts foram utilizados no ubuntu e funciona em distribuições derivadas
 ___
 
-## Prepare Workstation
+## Preparo da estação de trabalho
 
-> Read the `ubuntu.yml` file before applying and be sure to understand everything that will be done.
+> Leia o arquivo antes de aplicar e tenha certeza que entendeu tudo que será feito
 
-1. Install Ansible
+1. Instale Ansible
 ```bash
 sudo apt update && sudo apt install ansible -y
 ```
-2. Clone this repository
+2. Clone o repositorio
 ```bash
 git clone https://github.com/deividduarte20/ansible.git
 ```
 
-3. Apply the configuration
+3. Aplique a configuração
 ```bash
 ansible-playbook tools/ubuntu.yml --ask-become-pass
 ```
->Type your password when asked to give root permissions for some actions.
+>Digite a senha do usuário root para executar a playbook
 ___
 
 
-Contributions are more than welcome!
+Espero que tenha gostado, caso tenha alguma sugestão ou melhoria favor entrar em contato, as informações para contato se encontram na página principal do github.
