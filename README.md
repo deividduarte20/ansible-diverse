@@ -26,6 +26,20 @@ ansible-playbook tools/ubuntu.yml --ask-become-pass
 >Digite a senha do usuário root para executar a playbook
 ___
 
+Pacotes que serão instalados:
+- vim
+- htop
+- tree
+- snapd
+- gdebi
+- remmina
+- vagrant
+- vscode
+- anydesk
+- simplescreenrecorder
+- teamviewer
+- Por fim insere parâmetros no arquiv vimrc para deixar o visual e usabilidade do vim melhor
+
 
 Espero que tenha gostado, caso tenha alguma sugestão ou melhoria favor entrar em contato, as informações para contato se encontram na página principal do github.
 
