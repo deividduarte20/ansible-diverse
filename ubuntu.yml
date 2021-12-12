@@ -18,7 +18,7 @@
           - gdebi 
           - remmina
           - vagrant
-  
+
     - name: Downloading Vscode
       get_url:  
         url: https://az764295.vo.msecnd.net/stable/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/code_1.62.3-1637137107_amd64.deb
@@ -51,3 +51,14 @@
     
     - name: Configure vimrc for root
       command: ./info.sh/
+
+    - name: Downloading Free Download Manager
+      get_url:
+        url: https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
+        dest: /tmp
+        mod: '0440'
+
+    - name: Install Free Download Manager        
+      dpkg_selections:
+          name: freedownloadmanager.deb
+          selection: install
