@@ -18,6 +18,7 @@
           - gdebi 
           - remmina
           - vagrant
+	  - copyq
 
     - name: Downloading Vscode
       get_url:  
