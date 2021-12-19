@@ -19,6 +19,8 @@
           - remmina
           - copyq
           - flameshot
+          - curl
+          - vagrant
     
     - name: Downloading Vscode
       get_url:  
