@@ -21,6 +21,7 @@
           - flameshot
           - curl
           - vagrant
+          - tilix
     
     - name: Downloading Vscode
       get_url:  
