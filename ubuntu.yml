@@ -22,6 +22,7 @@
           - curl
           - vagrant
           - tilix
+          - ubuntu-restricted-extras
     
     - name: Downloading Vscode
       get_url:  
