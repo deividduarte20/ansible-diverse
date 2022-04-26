@@ -38,7 +38,7 @@ Pacotes que serão instalados:
 - anydesk
 - simplescreenrecorder
 - teamviewer
-- Por fim insere parâmetros no arquiv vimrc para deixar o visual e usabilidade do vim melhor
+- Por fim insere parâmetros no arquivo vimrc para deixar o visual e usabilidade do vim melhor
 
 
 Espero que tenha gostado, caso tenha alguma sugestão de melhoria favor entrar em contato, as informações para contato se encontram na página principal do github.
