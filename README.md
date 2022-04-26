@@ -21,7 +21,7 @@ git clone https://github.com/deividduarte20/ansible.git
 
 3. Aplique a configuração
 ```bash
-ansible-playbook tools/ubuntu.yml --ask-become-pass
+ansible-playbook ubuntu.yml --ask-become-pass
 ```
 >Digite a senha do usuário root para executar a playbook
 ___
